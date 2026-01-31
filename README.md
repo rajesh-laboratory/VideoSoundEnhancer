@@ -1,16 +1,26 @@
 # VideoSoundEnhancer
 
-Automatically sync sound effects to video motion.
+Motion-synced sound effects tool for video.
 
 ## Demo
 
 https://github.com/rajesh-laboratory/VideoSoundEnhancer/raw/main/demo/demo.mp4
 
+## Overview
+
+Analyzes motion in video and modulates sound effects volume to match movement intensity. Works well with periodic/rhythmic motion.
+
 ## Features
 
-- Automatic SFX sync with video movement
-- Works with rhythmic and periodic motion
-- Simple CLI interface
+- Runs locally (no upload, no API keys)
+- ~2x realtime processing on modern CPU
+- Low memory usage
+
+## Use Cases
+
+- AI-generated videos (Wan2.2, Kling, Runway, etc.)
+- Adding impact/wet sounds to existing videos
+- Sound effects tracks for game animations
 
 ## Usage
 
@@ -22,34 +32,29 @@ VideoSoundEnhancer014-demo.exe input.mp4 sfx.wav -o output.mp4
 
 | Option | Description | Default |
 |--------|-------------|---------|
-| `--start` | Start position in seconds | 0 |
+| `--start` | Start position (sec) | 0 |
 | `--sensitivity` | Motion sensitivity | 1.0 |
-| `--volume` | SFX volume | 0.8 |
+| `--volume` | Sound effects volume | 0.8 |
 
-## Demo Version Limitations
+## Demo Limitations
 
-| Feature | Demo | Full |
+| | Demo | Full |
 |---------|------|------|
-| Max duration | 60 seconds | Unlimited |
-| Input format | MP4 only | MP4, AVI, MKV, MOV |
-| Output format | MP4 only | MP4, WAV |
+| Duration | 60 sec | Unlimited |
+| Input | MP4 | MP4, AVI, MKV, MOV |
+| Output | MP4 | MP4, WAV |
 
 ## Download
 
-Download the latest release from [Releases](../../releases).
+[Releases](../../releases)
 
-## Installation
+## Requirements
 
-1. Download and extract the ZIP file
-2. Run `VideoSoundEnhancer014-demo.exe` from command line
-
-All required DLLs are included in the package.
+Windows. All DLLs included.
 
 ## Security
 
-This software is safe to use.
-
-[VirusTotal Scan Result](https://www.virustotal.com/gui/url/effbe8327cbf65f78b39a53f905a96f06c586dbca350ed28bea9b96d9c251552) - Clean
+[VirusTotal](https://www.virustotal.com/gui/url/effbe8327cbf65f78b39a53f905a96f06c586dbca350ed28bea9b96d9c251552) - Clean
 
 ## License
 
