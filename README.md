@@ -45,6 +45,12 @@ Download the latest release from [Releases](../../releases).
 
 All required DLLs are included in the package.
 
+## Security
+
+This software is safe to use.
+
+[VirusTotal Scan Result](https://www.virustotal.com/gui/url/effbe8327cbf65f78b39a53f905a96f06c586dbca350ed28bea9b96d9c251552) - Clean
+
 ## License
 
 Proprietary. Free for personal use.
