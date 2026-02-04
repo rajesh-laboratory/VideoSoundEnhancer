@@ -13,8 +13,16 @@ Analyzes motion in video and modulates sound effects volume to match movement in
 ## Features
 
 - Runs locally (no upload, no API keys)
-- ~2x realtime processing on modern CPU
-- Low memory usage
+- No duration limit — handles any length video
+- Pure Rust optical flow engine (no OpenCV / Python dependency)
+
+### Performance
+
+| Metric | Value |
+|--------|-------|
+| Processing speed | ~2x realtime on modern CPU |
+| Memory usage | Constant (~200 MB) regardless of video length |
+| Parallelism | Multi-core (scales with CPU cores) |
 
 ## Use Cases
 
@@ -32,15 +40,15 @@ VideoSoundEnhancer014-demo.exe input.mp4 sfx.wav -o output.mp4
 
 | Option | Description | Default |
 |--------|-------------|---------|
-| `--start` | Start position (sec) | 0 |
 | `--sensitivity` | Motion sensitivity | 1.0 |
-| `--volume` | Sound effects volume | 0.8 |
+| `--sfx-volume` | SFX volume in final mix | 0.8 |
+| `--original-volume` | Original audio volume in final mix | 1.0 |
 
 ## Demo Limitations
 
 | | Demo | Full |
 |---------|------|------|
-| Duration | 60 sec | Unlimited |
+| Duration | Unlimited | Unlimited |
 | Input | MP4 | MP4, AVI, MKV, MOV |
 | Output | MP4 | MP4, WAV |
 
