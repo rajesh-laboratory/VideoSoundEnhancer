@@ -33,7 +33,7 @@ Analyzes motion in video and modulates sound effects volume to match movement in
 ## Usage
 
 ```bash
-VideoSoundEnhancer014-demo.exe input.mp4 sfx.wav -o output.mp4
+VideoSoundEnhancer016-demo.exe input.mp4 sfx.wav -o output.mp4
 ```
 
 ### Options
